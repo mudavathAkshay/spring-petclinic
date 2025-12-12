@@ -1,4 +1,4 @@
-FROM maven:3.9.11-eclipse-temurin-21-noble AS build
+FROM maven:3.9.11-eclipse-temurin-25-noble AS build
 WORKDIR /app
 ADD . /app
 RUN mvn package

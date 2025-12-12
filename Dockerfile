@@ -3,7 +3,7 @@ WORKDIR /app
 ADD . /app
 RUN mvn package
 
-FROM eclipse-temurin:25.0.1_8-jre-noble as runtime
+FROM eclipse-temurin:25.0.1_8-jre-noble AS runtime
 LABEL javaproject=scp
 LABEL source=maven
 ARG user=devops
